@@ -1,0 +1,1595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B09745B3-7ACC-492C-9101-51111972316B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EWSEditor</RootNamespace>
+    <AssemblyName>EWSEditor</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>Resources\EWSEditor2.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <StartupObject>EWSEditor.Program</StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Exchange.WebServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EWSManagedAPI\ews-managed-api\bin\Debug\Microsoft.Exchange.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
+      <HintPath>packages\Microsoft.IdentityModel.Clients.ActiveDirectory.2.19.208020213\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms">
+      <HintPath>packages\Microsoft.IdentityModel.Clients.ActiveDirectory.2.19.208020213\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\System.Management.Automation.dll.10.0.10586.0\lib\net40\System.Management.Automation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\EwsHelpers\AuthenticationHelper.cs" />
+    <Compile Include="Common\AutodiscoverInfo.cs" />
+    <Compile Include="Common\EwsHelpers\EwsExtendedPropertyHelper.cs" />
+    <Compile Include="Common\EwsHelpers\EwsPropertyHelper.cs" />
+    <Compile Include="Common\Exports\AdditionalProperties.cs" />
+    <Compile Include="Common\Exports\ListViewExport.cs" />
+    <Compile Include="Common\EwsEditorServiceInstanceSettings.cs" />
+    <Compile Include="Common\Exports\AttachmentExport.cs" />
+    <Compile Include="Common\Exports\AppointmentData.cs" />
+    <Compile Include="Common\Exports\CalendarExport.cs" />
+    <Compile Include="Common\EwsHelpers\EwsFolderHelper.cs" />
+    <Compile Include="Common\Exports\MeetingMessageExport.cs" />
+    <Compile Include="Common\Exports\MeetingMessageData.cs" />
+    <Compile Include="Common\ProxyMappedTypes\ProxyMappedTypes.cs" />
+    <Compile Include="Common\EwsHelpers\SharedCalendarsHelper.cs" />
+    <Compile Include="Common\UIHelpers\ListViewItemComparer.cs" />
+    <Compile Include="Common\UIHelpers\TextEdit.cs" />
+    <Compile Include="Common\Exports\AttachmentTableEntryData.cs" />
+    <Compile Include="Common\UtilityHelpers\IcsHelper.cs" />
+    <Compile Include="Forms\Calendar\CalendarBreakdownView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar\CalendarBreakdownView.Designer.cs">
+      <DependentUpon>CalendarBreakdownView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AddRemoveHeaders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AddRemoveHeaders.Designer.cs">
+      <DependentUpon>AddRemoveHeaders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\EwsHelpers\ActiveDirectoryHelper.cs" />
+    <Compile Include="Common\EwsHelpers\AppointmentHelper.cs" />
+    <Compile Include="Common\UIHelpers\ComboBoxHelper.cs" />
+    <Compile Include="Common\UIHelpers\FolderTag.cs" />
+    <Compile Include="Common\UtilityHelpers\HttpHelpler.cs" />
+    <Compile Include="Common\UIHelpers\ItemHelper.cs" />
+    <Compile Include="Common\UIHelpers\ItemTag.cs" />
+    <Compile Include="Common\UIHelpers\ListViewColumnSorter.cs" />
+    <Compile Include="Common\UIHelpers\ListViewItemHelper.cs" />
+    <Compile Include="Common\UIHelpers\UserAgentHelper.cs" />
+    <Compile Include="Forms\Attachments\AddRemoveAttachments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Attachments\AddRemoveAttachments.Designer.cs">
+      <DependentUpon>AddRemoveAttachments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Calendar\CalendarCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar\CalendarCheck.Designer.cs">
+      <DependentUpon>CalendarCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeveloperTest\DeveloperAttachmentTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeveloperTest\DeveloperAttachmentTestForm.Designer.cs">
+      <DependentUpon>DeveloperAttachmentTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeveloperTest\DeveloperFolderTestform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeveloperTest\DeveloperFolderTestform.Designer.cs">
+      <DependentUpon>DeveloperFolderTestform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeveloperTest\DeveloperItemTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeveloperTest\DeveloperItemTestForm.Designer.cs">
+      <DependentUpon>DeveloperItemTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeveloperTest\DeveloperServiceTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeveloperTest\DeveloperServiceTestForm.Designer.cs">
+      <DependentUpon>DeveloperServiceTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\EnterTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\EnterTextForm.Designer.cs">
+      <DependentUpon>EnterTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\PropertySetDialogAddFromCSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\PropertySetDialogAddFromCSV.Designer.cs">
+      <DependentUpon>PropertySetDialogAddFromCSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SelectFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SelectFolder.Designer.cs">
+      <DependentUpon>SelectFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Discovery\DomainSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Discovery\DomainSettingsForm.Designer.cs">
+      <DependentUpon>DomainSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\EditContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\EditContent.Designer.cs">
+      <DependentUpon>EditContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmptyFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmptyFolder.Designer.cs">
+      <DependentUpon>EmptyFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MarkAsJunkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MarkAsJunkForm.Designer.cs">
+      <DependentUpon>MarkAsJunkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Retention\FolderRetentionSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Retention\FolderRetentionSettings.Designer.cs">
+      <DependentUpon>FolderRetentionSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Searches\FindCertainFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\FindCertainFolders.Designer.cs">
+      <DependentUpon>FindCertainFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchCalendarExportPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchCalendarExportPicker.Designer.cs">
+      <DependentUpon>SearchCalendarExportPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchExportPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchExportPicker.Designer.cs">
+      <DependentUpon>SearchExportPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchFolders.Designer.cs">
+      <DependentUpon>SearchFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchCalendarsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchCalendarsForm.Designer.cs">
+      <DependentUpon>SearchCalendarsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchItemsMultiSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchItemsMultiSelectForm.Designer.cs">
+      <DependentUpon>SearchItemsMultiSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\FileContentHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\FileContentHelper.Designer.cs">
+      <DependentUpon>FileContentHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListActiveSyncDevices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListActiveSyncDevices.Designer.cs">
+      <DependentUpon>ListActiveSyncDevices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\MailApps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\MailApps.Designer.cs">
+      <DependentUpon>MailApps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Searches\EDiscoverySearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\EDiscoverySearchForm.Designer.cs">
+      <DependentUpon>EDiscoverySearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\EncodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\EncodeForm.designer.cs">
+      <DependentUpon>EncodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mail\MailHeadersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mail\MailHeadersForm.Designer.cs">
+      <DependentUpon>MailHeadersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\PostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\PostForm.Designer.cs">
+      <DependentUpon>PostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UtilityHelpers\PropertyGridHelper.cs" />
+    <Compile Include="Common\EwsHelpers\RecipientHelper.cs" />
+    <Compile Include="Common\UtilityHelpers\SerialHelper.cs" />
+    <Compile Include="Common\UtilityHelpers\StringHelper.cs" />
+    <Compile Include="Common\UtilityHelpers\TimeHelper.cs" />
+    <Compile Include="Common\UtilityHelpers\UserIoHelper.cs" />
+    <Compile Include="Forms\Searches\CheckFolderItemsForPropertyLoadingIssues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\CheckFolderItemsForPropertyLoadingIssues.Designer.cs">
+      <DependentUpon>CheckFolderItemsForPropertyLoadingIssues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Contacts\ContactsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Contacts\ContactsForm.designer.cs">
+      <DependentUpon>ContactsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Attachments\AttachmentsByTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Attachments\AttachmentsByTypeForm.designer.cs">
+      <DependentUpon>AttachmentsByTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Calendar\CalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar\CalendarForm.designer.cs">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Calendar\CalendarInstanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar\CalendarInstanceForm.designer.cs">
+      <DependentUpon>CalendarInstanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Calendar\CalendarMonthView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar\CalendarMonthView.designer.cs">
+      <DependentUpon>CalendarMonthView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ConversationIdDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ConversationIdDialog.Designer.cs">
+      <DependentUpon>ConversationIdDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\DistributionListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\DistributionListForm.Designer.cs">
+      <DependentUpon>DistributionListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\GlobalOptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\GlobalOptionsDialog.Designer.cs">
+      <DependentUpon>GlobalOptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\TimeZonesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\TimeZonesForm.designer.cs">
+      <DependentUpon>TimeZonesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\InboxRulesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\InboxRulesForm.Designer.cs">
+      <DependentUpon>InboxRulesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mail\MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mail\MessageForm.designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewFolderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewFolderForm.Designer.cs">
+      <DependentUpon>NewFolderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayItemOnPhoneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayItemOnPhoneForm.Designer.cs">
+      <DependentUpon>PlayItemOnPhoneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\RoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\RoomsForm.Designer.cs">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Discovery\ScpLookupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Discovery\ScpLookupForm.Designer.cs">
+      <DependentUpon>ScpLookupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchCalendar.Designer.cs">
+      <DependentUpon>SearchCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Attachments\AttachmentSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Attachments\AttachmentSelect.Designer.cs">
+      <DependentUpon>AttachmentSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Calendar\SelectSendMeetingUpdateNotificationOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar\SelectSendMeetingUpdateNotificationOptions.designer.cs">
+      <DependentUpon>SelectSendMeetingUpdateNotificationOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Calendar\SelectSendNewMeetingNotificationOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar\SelectSendNewMeetingNotificationOptions.designer.cs">
+      <DependentUpon>SelectSendNewMeetingNotificationOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ShowTextDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ShowTextDocument.designer.cs">
+      <DependentUpon>ShowTextDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Synchronization\StreamingNotificationForm.Designer.cs">
+      <DependentUpon>StreamingNotificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\SystemNetMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\SystemNetMainForm.Designer.cs">
+      <DependentUpon>SystemNetMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tasks\TaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tasks\TaskForm.Designer.cs">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\UploadItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\UploadItemForm.Designer.cs">
+      <DependentUpon>UploadItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\MimeEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\MimeEntry.Designer.cs">
+      <DependentUpon>MimeEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\UserConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\UserConfigForm.Designer.cs">
+      <DependentUpon>UserConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\GetMailTipsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\GetMailTipsForm.Designer.cs">
+      <DependentUpon>GetMailTipsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\UserRetentionTagPolicyTagsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\UserRetentionTagPolicyTagsForm.Designer.cs">
+      <DependentUpon>UserRetentionTagPolicyTagsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\ViewHtmlAsWebPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\ViewHtmlAsWebPage.Designer.cs">
+      <DependentUpon>ViewHtmlAsWebPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\MimeParserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\MimeParserForm.Designer.cs">
+      <DependentUpon>MimeParserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RemotePowerShell\PowerShellForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemotePowerShell\PowerShellForm.Designer.cs">
+      <DependentUpon>PowerShellForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TemplateEwsRequests.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TemplateEwsRequests.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\EnvironmentInfo.cs" />
+    <Compile Include="Common\UtilityHelpers\ConversionHelper.cs" />
+    <Compile Include="Common\EwsApiTraceParser.cs" />
+    <Compile Include="Common\EwsHelpers\ExceptionHelper.cs" />
+    <Compile Include="Logging\DebugLog.cs" />
+    <Compile Include="Logging\EwsTraceListener.cs" />
+    <Compile Include="Common\EwsHelpers\ValidationCallbackHelper.cs" />
+    <Compile Include="Common\EwsHelpers\ResponseCodeHelper.cs" />
+    <Compile Include="Common\Extensions\ExchangeServiceExtensions.cs" />
+    <Compile Include="Common\EwsHelpers\CertificateValidationHelper.cs" />
+    <Compile Include="Common\EwsProxyFactory.cs" />
+    <Compile Include="Common\Exports\ExportUploadHelper.cs" />
+    <Compile Include="Forms\AppointmentsContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AppointmentsContentForm.Designer.cs">
+      <DependentUpon>AppointmentsContentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Discovery\AutodiscoverViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Discovery\AutodiscoverViewerForm.Designer.cs">
+      <DependentUpon>AutodiscoverViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Attachments\AttachmentsContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Attachments\AttachmentsContentForm.Designer.cs">
+      <DependentUpon>AttachmentsContentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseContentForm.Designer.cs">
+      <DependentUpon>BaseContentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\AvailabilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\AvailabilityForm.designer.cs">
+      <DependentUpon>AvailabilityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\EnumComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\EnumComboBox.Designer.cs">
+      <DependentUpon>EnumComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\ConvertIdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\ConvertIdForm.Designer.cs">
+      <DependentUpon>ConvertIdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DebugLogViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DebugLogViewerForm.Designer.cs">
+      <DependentUpon>DebugLogViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Calendar\AttendeeInfoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar\AttendeeInfoDialog.Designer.cs">
+      <DependentUpon>AttendeeInfoDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ManagedApiDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ManagedApiDialog.Designer.cs">
+      <DependentUpon>ManagedApiDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\OofForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolsForms\OofForm.designer.cs">
+      <DependentUpon>OofForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FolderContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FolderContentForm.Designer.cs">
+      <DependentUpon>FolderContentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemsContentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemsContentForm.Designer.cs">
+      <DependentUpon>ItemsContentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CountedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CountedForm.Designer.cs">
+      <DependentUpon>CountedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\CreateItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\CreateItemDialog.Designer.cs">
+      <DependentUpon>CreateItemDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DelegateUserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DelegateUserDialog.Designer.cs">
+      <DependentUpon>DelegateUserDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ErrorDialog.Designer.cs">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\PropertySetDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\PropertySetDialog.Designer.cs">
+      <DependentUpon>PropertySetDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\UserIdDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\UserIdDialog.Designer.cs">
+      <DependentUpon>UserIdDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BrowserForm.Designer.cs">
+      <DependentUpon>BrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Synchronization\PullNotificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Synchronization\PullNotificationForm.Designer.cs">
+      <DependentUpon>PullNotificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Synchronization\SyncFolderItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Synchronization\SyncFolderItemsForm.Designer.cs">
+      <DependentUpon>SyncFolderItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyInformation\BinaryParser.cs" />
+    <Compile Include="PropertyInformation\SmartViews\BitFlagsToStringHelper.cs" />
+    <Compile Include="PropertyInformation\SmartViews\GlobalObjectIdSmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\ISmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\PidTagFlagStatusSmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\PidTagFollowupIconSmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\PidTagMessageFlagsSmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\ReaderHelper.cs" />
+    <Compile Include="PropertyInformation\SmartViews\TzDefinitionSmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\PidLidNoteColorSmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\PidLidSideEffectsSmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\PidTagAccessSmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\PidTagIconIndexSmartView.cs" />
+    <Compile Include="PropertyInformation\SmartViews\SmartViewFinder.cs" />
+    <Compile Include="PropertyInformation\TypeValues\AttendeeCollectionTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\AttendeeTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\ByteArrayArrayTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\FolderPermissionCollectionTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\FolderPermissionTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\LegacyFreeBusyStatusCollectionTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\MimeContentTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\PhysicalAddressEntryTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\PhysicalAddressDictionaryTypeValue.cs" />
+    <Compile Include="Common\ServiceProfiles\ServiceProfile.cs" />
+    <Compile Include="PropertyInformation\KnownExtendedProperties.cs" />
+    <Compile Include="PropertyInformation\KnownExtendedPropertiesData.cs" />
+    <Compile Include="PropertyInformation\PropertyInterpretation.cs" />
+    <Compile Include="PropertyInformation\TypeValues\StringArrayTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\TypeValueFinder.cs" />
+    <Compile Include="Forms\Dialogs\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\FindAppointmentsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\FindAppointmentsDialog.Designer.cs">
+      <DependentUpon>FindAppointmentsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DelegateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DelegateDialog.Designer.cs">
+      <DependentUpon>DelegateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ExtendedPropertyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ExtendedPropertyDialog.Designer.cs">
+      <DependentUpon>ExtendedPropertyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\FolderIdDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\FolderIdDialog.Designer.cs">
+      <DependentUpon>FolderIdDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ItemIdDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ItemIdDialog.Designer.cs">
+      <DependentUpon>ItemIdDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\GetMailboxNameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\GetMailboxNameDialog.Designer.cs">
+      <DependentUpon>GetMailboxNameDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\NetworkCredDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\NetworkCredDialog.Designer.cs">
+      <DependentUpon>NetworkCredDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\PermissionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\PermissionsDialog.Designer.cs">
+      <DependentUpon>PermissionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ResolveNameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ResolveNameDialog.Designer.cs">
+      <DependentUpon>ResolveNameDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SchemaPropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SchemaPropertiesDialog.Designer.cs">
+      <DependentUpon>SchemaPropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SchemaPropertyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SchemaPropertyDialog.Designer.cs">
+      <DependentUpon>SchemaPropertyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ServiceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ServiceDialog.Designer.cs">
+      <DependentUpon>ServiceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\EwsHelpers\ComparisonHelper.cs" />
+    <Compile Include="PropertyInformation\TypeValues\ByteArrayTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\EmailAddressCollectionTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\EmailAddressTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\ExchangeServiceTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\FolderIdTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\InternetMessageHeaderCollectionTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\InternetMessageHeaderTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\ItemIdTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\ITypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\MailboxTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\MessageBodyTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\OccurrenceInfoTypeValue.cs" />
+    <Compile Include="PropertyInformation\TypeValues\RecurrenceTypeValue.cs" />
+    <Compile Include="Forms\Controls\PropertyDetailsGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\PropertyDetailsGrid.Designer.cs">
+      <DependentUpon>PropertyDetailsGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\EWSStatusBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\EWSStatusBar.Designer.cs">
+      <DependentUpon>EWSStatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\GridDataTables.cs">
+      <DependentUpon>GridDataTables.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\GridDataTables.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridDataTables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UtilityHelpers\DumpHelper.cs" />
+    <Compile Include="Common\UtilityHelpers\FileHelper.cs" />
+    <Compile Include="Forms\DialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForm.Designer.cs">
+      <DependentUpon>DialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Util.cs" />
+    <Compile Include="Forms\Controls\PropertyEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\PropertyEditorDialog.Designer.cs">
+      <DependentUpon>PropertyEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\BodyEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\BodyEditorDialog.Designer.cs">
+      <DependentUpon>BodyEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HiddenMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HiddenMainForm.Designer.cs">
+      <DependentUpon>HiddenMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FolderTreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FolderTreeForm.Designer.cs">
+      <DependentUpon>FolderTreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\GlobalSettings.cs" />
+    <Compile Include="Settings\Internals\UserSettings.cs" />
+    <Compile Include="Settings\Internals\UserSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>UserSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Synchronization\StreamingNotificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ServiceSessionSetting.cs" />
+    <EmbeddedResource Include="Forms\Calendar\CalendarBreakdownView.resx">
+      <DependentUpon>CalendarBreakdownView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\AddRemoveHeaders.resx">
+      <DependentUpon>AddRemoveHeaders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Attachments\AddRemoveAttachments.resx">
+      <DependentUpon>AddRemoveAttachments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Calendar\CalendarCheck.resx">
+      <DependentUpon>CalendarCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeveloperTest\DeveloperAttachmentTestForm.resx">
+      <DependentUpon>DeveloperAttachmentTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeveloperTest\DeveloperFolderTestform.resx">
+      <DependentUpon>DeveloperFolderTestform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeveloperTest\DeveloperItemTestForm.resx">
+      <DependentUpon>DeveloperItemTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeveloperTest\DeveloperServiceTestForm.resx">
+      <DependentUpon>DeveloperServiceTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\EnterTextForm.resx">
+      <DependentUpon>EnterTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\PropertySetDialogAddFromCSV.resx">
+      <DependentUpon>PropertySetDialogAddFromCSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\SelectFolder.resx">
+      <DependentUpon>SelectFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Discovery\DomainSettingsForm.resx">
+      <DependentUpon>DomainSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\EditContent.resx">
+      <DependentUpon>EditContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmptyFolder.resx">
+      <DependentUpon>EmptyFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MarkAsJunkForm.resx">
+      <DependentUpon>MarkAsJunkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Retention\FolderRetentionSettings.resx">
+      <DependentUpon>FolderRetentionSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\FindCertainFolders.resx">
+      <DependentUpon>FindCertainFolders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\SearchCalendarExportPicker.resx">
+      <DependentUpon>SearchCalendarExportPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\SearchExportPicker.resx">
+      <DependentUpon>SearchExportPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\SearchFolders.resx">
+      <DependentUpon>SearchFolders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\SearchCalendarsForm.resx">
+      <DependentUpon>SearchCalendarsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\SearchItemsMultiSelectForm.resx">
+      <DependentUpon>SearchItemsMultiSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\FileContentHelper.resx">
+      <DependentUpon>FileContentHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListActiveSyncDevices.resx">
+      <DependentUpon>ListActiveSyncDevices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\MailApps.resx">
+      <DependentUpon>MailApps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\EDiscoverySearchForm.resx">
+      <DependentUpon>EDiscoverySearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\EncodeForm.resx">
+      <DependentUpon>EncodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mail\MailHeadersForm.resx">
+      <DependentUpon>MailHeadersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\PostForm.resx">
+      <DependentUpon>PostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\CheckFolderItemsForPropertyLoadingIssues.resx">
+      <DependentUpon>CheckFolderItemsForPropertyLoadingIssues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Contacts\ContactsForm.resx">
+      <DependentUpon>ContactsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AppointmentsContentForm.resx">
+      <DependentUpon>AppointmentsContentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Attachments\AttachmentsByTypeForm.resx">
+      <DependentUpon>AttachmentsByTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Discovery\AutodiscoverViewerForm.resx">
+      <DependentUpon>AutodiscoverViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Attachments\AttachmentsContentForm.resx">
+      <DependentUpon>AttachmentsContentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseContentForm.resx">
+      <DependentUpon>BaseContentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\AvailabilityForm.resx">
+      <DependentUpon>AvailabilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Calendar\CalendarForm.resx">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Calendar\CalendarInstanceForm.resx">
+      <DependentUpon>CalendarInstanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Calendar\CalendarMonthView.resx">
+      <DependentUpon>CalendarMonthView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\EnumComboBox.resx">
+      <DependentUpon>EnumComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\ConvertIdForm.resx">
+      <DependentUpon>ConvertIdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CountedForm.resx">
+      <DependentUpon>CountedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DebugLogViewerForm.resx">
+      <DependentUpon>DebugLogViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Calendar\AttendeeInfoDialog.resx">
+      <DependentUpon>AttendeeInfoDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ConversationIdDialog.resx">
+      <DependentUpon>ConversationIdDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\DistributionListForm.resx">
+      <DependentUpon>DistributionListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ManagedApiDialog.resx">
+      <DependentUpon>ManagedApiDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\OofForm.resx">
+      <DependentUpon>OofForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\GlobalOptionsDialog.resx">
+      <DependentUpon>GlobalOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\TimeZonesForm.resx">
+      <DependentUpon>TimeZonesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FolderContentForm.resx">
+      <DependentUpon>FolderContentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\InboxRulesForm.resx">
+      <DependentUpon>InboxRulesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemsContentForm.resx">
+      <DependentUpon>ItemsContentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\PropertyDetailsGrid.resx">
+      <DependentUpon>PropertyDetailsGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\EWSStatusBar.resx">
+      <DependentUpon>EWSStatusBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BrowserForm.resx">
+      <DependentUpon>BrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\PropertyEditorDialog.resx">
+      <DependentUpon>PropertyEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\BodyEditorDialog.resx">
+      <DependentUpon>BodyEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\CreateItemDialog.resx">
+      <DependentUpon>CreateItemDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\DelegateUserDialog.resx">
+      <DependentUpon>DelegateUserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\PropertySetDialog.resx">
+      <DependentUpon>PropertySetDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\UserIdDialog.resx">
+      <DependentUpon>UserIdDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mail\MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewFolderForm.resx">
+      <DependentUpon>NewFolderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayItemOnPhoneForm.resx">
+      <DependentUpon>PlayItemOnPhoneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Synchronization\PullNotificationForm.resx">
+      <DependentUpon>PullNotificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\RoomsForm.resx">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Discovery\ScpLookupForm.resx">
+      <DependentUpon>ScpLookupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\SearchCalendar.resx">
+      <DependentUpon>SearchCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Attachments\AttachmentSelect.resx">
+      <DependentUpon>AttachmentSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Searches\SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Calendar\SelectSendMeetingUpdateNotificationOptions.resx">
+      <DependentUpon>SelectSendMeetingUpdateNotificationOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Calendar\SelectSendNewMeetingNotificationOptions.resx">
+      <DependentUpon>SelectSendNewMeetingNotificationOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ShowTextDocument.resx">
+      <DependentUpon>ShowTextDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Synchronization\StreamingNotificationForm.resx">
+      <DependentUpon>StreamingNotificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Synchronization\SyncFolderItemsForm.resx">
+      <DependentUpon>SyncFolderItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FolderTreeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FolderTreeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\FindAppointmentsDialog.resx">
+      <DependentUpon>FindAppointmentsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\DelegateDialog.resx">
+      <DependentUpon>DelegateDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ExtendedPropertyDialog.resx">
+      <DependentUpon>ExtendedPropertyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\FolderIdDialog.resx">
+      <DependentUpon>FolderIdDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ItemIdDialog.resx">
+      <DependentUpon>ItemIdDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\GetMailboxNameDialog.resx">
+      <DependentUpon>GetMailboxNameDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\NetworkCredDialog.resx">
+      <DependentUpon>NetworkCredDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\PermissionsDialog.resx">
+      <DependentUpon>PermissionsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ResolveNameDialog.resx">
+      <DependentUpon>ResolveNameDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\SchemaPropertiesDialog.resx">
+      <DependentUpon>SchemaPropertiesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\SchemaPropertyDialog.resx">
+      <DependentUpon>SchemaPropertyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ServiceDialog.resx">
+      <DependentUpon>ServiceDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HiddenMainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HiddenMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\SystemNetMainForm.resx">
+      <DependentUpon>SystemNetMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tasks\TaskForm.resx">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\UploadItemForm.resx">
+      <DependentUpon>UploadItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\MimeEntry.resx">
+      <DependentUpon>MimeEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\UserConfigForm.resx">
+      <DependentUpon>UserConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\GetMailTipsForm.resx">
+      <DependentUpon>GetMailTipsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\UserRetentionTagPolicyTagsForm.resx">
+      <DependentUpon>UserRetentionTagPolicyTagsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ToolsForms\ViewHtmlAsWebPage.resx">
+      <DependentUpon>ViewHtmlAsWebPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\MimeParserForm.resx">
+      <DependentUpon>MimeParserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemotePowerShell\PowerShellForm.resx">
+      <DependentUpon>PowerShellForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DisplayStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DisplayStrings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TemplateEwsRequests.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TemplateEwsRequests.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="AdditionalProperties\KnownProperties.csv" />
+    <None Include="AdditionalProperties\UnknownCalendarProperties.csv" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Microsoft.Exchange.Data.Services.ExtendedPropertyDefinition.datasource" />
+    <None Include="Properties\DataSources\Microsoft.Exchange.Data.Services.Item.datasource" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyInformation\TypeValues\WorkingHoursTypeValue.cs" />
+    <Compile Include="Resources\DisplayStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DisplayStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ServiceProfiles\ServicesProfile.cs">
+      <DependentUpon>ServicesProfile.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ServiceProfiles\ServicesProfile.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicesProfile.xsd</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Internals\UserSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>UserSettings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\EWSEditor.Controls.GridDataTables+ItemListDataTable.datasource" />
+    <None Include="Resources\Blank.bmp" />
+    <None Include="Resources\FirstProp.png" />
+    <None Include="Resources\ExtProp.png" />
+    <None Include="Forms\Controls\GridDataTables.xsc">
+      <DependentUpon>GridDataTables.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\Controls\GridDataTables.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GridDataTables.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forms\Controls\GridDataTables.xss">
+      <DependentUpon>GridDataTables.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\EWSEditor.Controls.PropertyListItem.datasource" />
+    <None Include="Common\ServiceProfiles\ServicesProfile.xsc">
+      <DependentUpon>ServicesProfile.xsd</DependentUpon>
+    </None>
+    <None Include="Common\ServiceProfiles\ServicesProfile.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServicesProfile.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\ServiceProfiles\ServicesProfile.xss">
+      <DependentUpon>ServicesProfile.xsd</DependentUpon>
+    </None>
+    <None Include="docs\ReleaseNotes.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\EWSEditor.PropertyInformation.KnownExtendedPropertyInfo.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="deps\Microsoft.Exchange.WebServices.Auth.dll" />
+    <Content Include="deps\Microsoft.Exchange.WebServices.dll" />
+    <Content Include="EwsPostExamples\Autodiscover - POX .xml" />
+    <Content Include="EwsPostExamples\AddDelegate.xml" />
+    <Content Include="EwsPostExamples\AddDistributionGroupToImList.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\AddImContactToGroup.xml" />
+    <Content Include="EwsPostExamples\AddImGroup.xml" />
+    <Content Include="EwsPostExamples\AddNewImContactToGroup.xml" />
+    <Content Include="EwsPostExamples\AddNewTelUriContactToGroup.xml" />
+    <Content Include="EwsPostExamples\ApplyConversationAction.xml" />
+    <Content Include="EwsPostExamples\ArchiveItem.xml" />
+    <Content Include="EwsPostExamples\ConvertId.xml" />
+    <Content Include="EwsPostExamples\CopyFolder.xml" />
+    <Content Include="EwsPostExamples\CopyItem.xml" />
+    <Content Include="EwsPostExamples\CreateAttachment.xml" />
+    <Content Include="EwsPostExamples\CreateFolder - SearchFolder- Complex.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\CreateFolder.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\CreateFolderPath.xml" />
+    <Content Include="EwsPostExamples\CreateItem - AcceptSharingInvitation.xml" />
+    <Content Include="EwsPostExamples\CreateItem - calendar item.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\CreateItem - contact.xml" />
+    <Content Include="EwsPostExamples\CreateItem - email message.xml" />
+    <Content Include="EwsPostExamples\CreateItem - accept meeting request.xml" />
+    <Content Include="EwsPostExamples\CreateItem - task.xml" />
+    <Content Include="EwsPostExamples\CreateManagedFolder.xml" />
+    <Content Include="EwsPostExamples\CreateOrUpdateFocusedOtherOverride -  Edit or Create a Focused Inbox override rule and set it to Other.xml" />
+    <Content Include="EwsPostExamples\CreateOrUpdateFocusedOtherOverride - Edit or Create a Focused Inbox Override Rule and set it to Focused.xml" />
+    <Content Include="EwsPostExamples\CreateUserConfiguration.xml" />
+    <Content Include="EwsPostExamples\DeleteAttachment.xml" />
+    <Content Include="EwsPostExamples\DeleteFocusedOtherOverride  - Delete a Focused Inbox Override Rule.xml" />
+    <Content Include="EwsPostExamples\DeleteFolder.xml" />
+    <Content Include="EwsPostExamples\DeleteItem.xml" />
+    <Content Include="EwsPostExamples\DeleteUserConfiguration.xml" />
+    <Content Include="EwsPostExamples\DisableApp.xml" />
+    <Content Include="EwsPostExamples\DisconnectPhoneCall.xml" />
+    <Content Include="EwsPostExamples\EmptyFolder - HardDelete - SubFolders.xml" />
+    <Content Include="EwsPostExamples\GetUserSetting - PublicFolderInformation .xml" />
+    <Content Include="EwsPostExamples\Office365ReportingServices.xml" />
+    <Content Include="EwsPostExamples\ExpandDL.xml" />
+    <Content Include="EwsPostExamples\ExportItems.xml" />
+    <Content Include="EwsPostExamples\FindConversation.xml" />
+    <Content Include="EwsPostExamples\FindFolder - Find ALL folders with items.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\FindFolder.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\FindItem - CalendarView.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\FindItem - FractionalPageItemView.xml" />
+    <Content Include="EwsPostExamples\FindItem - IndexedPageItemView.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\Finditem - subject and body.xml" />
+    <Content Include="EwsPostExamples\FindPeople - AQS Search against GAL and return specified properties.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\FindPeople.xml" />
+    <Content Include="EwsPostExamples\GetAppManifests.xml" />
+    <Content Include="EwsPostExamples\GetAppMarketplaceUrl.xml" />
+    <Content Include="EwsPostExamples\GetAttachment.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetClientAccessToken.xml" />
+    <Content Include="EwsPostExamples\GetConversationItems.xml" />
+    <Content Include="EwsPostExamples\GetDelegate.xml" />
+    <Content Include="EwsPostExamples\GetDiscoverySearchConfiguration.xml" />
+    <Content Include="EwsPostExamples\GetEvents.xml" />
+    <Content Include="EwsPostExamples\GetFocusedOtherOverrides - List Focused Inbox Override Rules .xml" />
+    <Content Include="EwsPostExamples\GetFolder.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetFolder - MsgRootFolder.xml" />
+    <Content Include="EwsPostExamples\GetHoldOnMailboxes.xml" />
+    <Content Include="EwsPostExamples\GetImItemList.xml" />
+    <Content Include="EwsPostExamples\GetImItems.xml" />
+    <Content Include="EwsPostExamples\GetInboxRules.xml" />
+    <Content Include="EwsPostExamples\GetItem - AllKnownProperties.xml" />
+    <Content Include="EwsPostExamples\GetItem - calendar.xml" />
+    <Content Include="EwsPostExamples\GetItem - contact.xml" />
+    <Content Include="EwsPostExamples\GetItem - Details of a message with CRM properties.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetItem - email message.xml" />
+    <Content Include="EwsPostExamples\GetItem - task.xml" />
+    <Content Include="EwsPostExamples\GetItem.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetMailTips.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetNonIndexableItemDetails.xml" />
+    <Content Include="EwsPostExamples\GetNonIndexableItemStatistics.xml" />
+    <Content Include="EwsPostExamples\GetPasswordExpirationDate.xml" />
+    <Content Include="EwsPostExamples\GetPersona.xml" />
+    <Content Include="EwsPostExamples\GetPhoneCallInformation.xml" />
+    <Content Include="EwsPostExamples\GetReminders.xml" />
+    <Content Include="EwsPostExamples\GetRoomLists .xml" />
+    <Content Include="EwsPostExamples\GetRooms.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetSearchableMailboxes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetServerTimeZones - Russia.xml" />
+    <Content Include="EwsPostExamples\GetServerTimeZones.xml" />
+    <Content Include="EwsPostExamples\GetServiceConfiguration.xml" />
+    <Content Include="EwsPostExamples\GetSharingFolder.xml" />
+    <Content Include="EwsPostExamples\GetSharingMetadata.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetStreamingEvents.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetUserAvailability.xml" />
+    <Content Include="EwsPostExamples\GetUserConfiguration.xml" />
+    <Content Include="EwsPostExamples\GetUserOOFSettings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\GetUserPhoto.xml" />
+    <Content Include="EwsPostExamples\GetUserRetentionPolicyTags .xml" />
+    <Content Include="EwsPostExamples\GetUserSettings - for autodiscover.svc.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\InstallApp.xml" />
+    <Content Include="EwsPostExamples\MarkAllItemsAsJunk.xml" />
+    <Content Include="EwsPostExamples\MarkAllItemsAsRead.xml" />
+    <Content Include="EwsPostExamples\MoveFolder.xml" />
+    <Content Include="EwsPostExamples\MoveItem.xml" />
+    <Content Include="EwsPostExamples\PlayOnPhone.xml" />
+    <Content Include="EwsPostExamples\RefreshSharingFolder.xml" />
+    <Content Include="EwsPostExamples\SetImGroup.xml" />
+    <Content Include="EwsPostExamples\Subscribe - PullSubscriptionRequest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EwsPostExamples\Subscribe - PushSubscriptionRequest.xml" />
+    <Content Include="EwsPostExamples\RemoveContactFromImList.xml" />
+    <Content Include="EwsPostExamples\RemoveDelegate .xml" />
+    <Content Include="EwsPostExamples\RemoveDistributionGroupFromImList.xml" />
+    <Content Include="EwsPostExamples\RemoveImContactFromGroup.xml" />
+    <Content Include="EwsPostExamples\RemoveImGroup.xml" />
+    <Content Include="EwsPostExamples\ResolveNames.xml" />
+    <Content Include="EwsPostExamples\SearchMailboxes.xml" />
+    <Content Include="EwsPostExamples\SendItem.xml" />
+    <Content Include="EwsPostExamples\SetHoldOnMailboxes.xml" />
+    <Content Include="EwsPostExamples\SetUserOOFSettings.xml" />
+    <Content Include="EwsPostExamples\SyncFolderHierarchy.xml" />
+    <Content Include="EwsPostExamples\SyncFolderItems.xml" />
+    <Content Include="EwsPostExamples\UninstallApp.xml" />
+    <Content Include="EwsPostExamples\Unsubscribe.xml" />
+    <Content Include="EwsPostExamples\UpdateDelegate.xml" />
+    <Content Include="EwsPostExamples\UpdateFolder.xml" />
+    <Content Include="EwsPostExamples\UpdateInboxRules.xml" />
+    <Content Include="EwsPostExamples\UpdateItem - Contact.xml" />
+    <Content Include="EwsPostExamples\UpdateItem - Item.xml" />
+    <Content Include="EwsPostExamples\UpdateUserConfiguration.xml" />
+    <Content Include="EwsPostExamples\UploadItems.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="HtmlBodyExamples\BasicHtmlBody.txt" />
+    <Content Include="HtmlBodyExamples\BodyWithInlineAttachment.txt" />
+    <Content Include="HtmlBodyExamples\ManyFormatsHtmlBody.txt" />
+    <Content Include="HtmlBodyExamples\Field2MeterQarterGP.png" />
+    <Content Include="docs\ToDo.txt" />
+    <None Include="Resources\action_add_16xLG.bmp" />
+    <Content Include="Notes.txt" />
+    <Content Include="Resources\action_add_16xLG.png" />
+    <Content Include="Resources\Error_red_16x16_exp.png" />
+    <Content Include="Resources\EWSEditor2.ico" />
+    <Content Include="Resources\EWSEditor2.png" />
+    <Content Include="Resources\SingleMessage_5727.ico" />
+    <Content Include="Resources\StatusAnnotations_Blocked_16xLG.png" />
+    <Content Include="Resources\StatusAnnotations_Critical_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\ItemCheckers\" />
+    <Folder Include="Exchange\" />
+    <Folder Include="Forms\Dialogs\SmartEditors\" />
+    <Folder Include="Forms\ServiceLevelForms\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="Retired\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CDO">
+      <Guid>{CD000000-8B95-11D1-82DB-00C04FB1625D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>md "$(TargetDir)EwsPostExamples"
+md "$(TargetDir)Testing"
+md "$(TargetDir)HtmlBodyExamples
+md "$(TargetDir)AdditionalPropertiesExamples
+md "$(TargetDir)Export
+Copy /Y "$(ProjectDir)AdditionalProperties\*.*" "$(TargetDir)AdditionalPropertiesExamples\*.*"
+Copy /Y "$(ProjectDir)EwsPostExamples\*.*" "$(TargetDir)EwsPostExamples\*.*"
+Copy /Y "$(ProjectDir)HtmlBodyExamples\*.*" "$(TargetDir)HtmlBodyExamples\*.*"
+Copy /Y "$(ProjectDir)deps\Microsoft.Exchange.WebServices.dll" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
